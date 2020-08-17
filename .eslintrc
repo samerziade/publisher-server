@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": ["react-app", "plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prefer-const": "error",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-object-literal-type-assertion": "off",
+    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-multi-space": "off"
+  }
+}
