@@ -1,4 +1,5 @@
-import { Connection } from 'mysql2'
+import { Connection } from 'mysql2/promise'
+
 import { Subscription } from '../SubscribeController'
 import { Message } from '../catchAllController'
 
