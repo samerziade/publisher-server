@@ -10,7 +10,7 @@ jest.mock('../../utils', () => ({
 }))
 
 jest.mock('../../mysql', () => ({
-  ...(jest.requireActual('../../mysql') as object),
+  connection: jest.fn(),
   upsertSubscription: jest.fn(),
 }))
 

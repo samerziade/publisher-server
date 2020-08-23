@@ -6,7 +6,7 @@ import { Subscription } from '../../subscribeController'
 let getSubscriptionByTopicReturnValue: () => Subscription
 
 jest.mock('../../mysql', () => ({
-  ...(jest.requireActual('../../mysql') as object),
+  connection: jest.fn(),
   getSubscriptionByTopic: jest.fn(() => getSubscriptionByTopicReturnValue()),
   createSubscription: jest.fn(() => undefined),
 }))
