@@ -18,7 +18,7 @@ jest.mock('../../mysql', () => ({
   ]),
 }))
 
-describe('catchAllController()', () => {
+describe('controller()', () => {
   it('should return a 404 resposne if the subscription is not found', async () => {
     const request: Partial<Request> = { params: { '0': '' } }
     const response: Partial<Response> = {}
