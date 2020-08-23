@@ -1,1 +1,1 @@
-export const getPort = () => process.env.PORT || 8000
+export const getPort = (): string => process.env.PORT || '8000'
