@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
 import { publishController } from '..'
-import { Subscription } from '../../SubscribeController'
+import { Subscription } from '../../subscribeController'
 
 let getSubscriptionByTopicReturnValue: () => Subscription
 
