@@ -10,7 +10,7 @@ export const connection = async (): Promise<Connection> => {
       password: 'root',
       database: 'publisher',
     }
-    conn = (mysql.createConnection(opts) as unknown) as Connection
+    conn = (await (mysql.createConnection(opts) as unknown)) as Connection
     conn.connect()
   }
 
