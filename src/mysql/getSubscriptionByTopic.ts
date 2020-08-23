@@ -1,6 +1,6 @@
 import { Connection } from 'mysql2/promise'
 
-import { Subscription } from '../SubscribeController'
+import { Subscription } from '../subscribeController'
 
 export const getSubscriptionByTopic = (conn: Connection, topic: string): Subscription => {
   const query = 'SELECT * FROM subscriptions WHERE topic = ?'

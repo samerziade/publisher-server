@@ -1,7 +1,7 @@
 import { Connection } from 'mysql2/promise'
 
 import { getMessagesForSubscription } from '..'
-import { Subscription } from '../../SubscribeController'
+import { Subscription } from '../../subscribeController'
 
 describe('getMessagesForSubscription()', () => {
   it('should return an empty array', () => {

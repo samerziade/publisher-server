@@ -1,7 +1,7 @@
 import { Connection } from 'mysql2/promise'
 
 import { getSubscriptionByTopic } from '..'
-import { Subscription } from '../../SubscribeController'
+import { Subscription } from '../../subscribeController'
 
 describe('getSubscriptionByTopic()', () => {
   it('should return undefined if the supplied topic is not found', () => {

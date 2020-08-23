@@ -1,7 +1,7 @@
 import { Connection } from 'mysql2/promise'
 
 import { createSubscription } from '..'
-import { Subscription } from '../../SubscribeController'
+import { Subscription } from '../../subscribeController'
 
 describe('createSubscription()', () => {
   it('should insert a new subscription record', () => {

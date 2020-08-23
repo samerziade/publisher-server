@@ -1,7 +1,7 @@
 import { Connection } from 'mysql2/promise'
 
 import { getSubscriptionByRoute } from '..'
-import { Subscription } from '../../SubscribeController'
+import { Subscription } from '../../subscribeController'
 
 describe('getSubscriptionByRoute()', () => {
   it('should return undefined if the supplied path is not found', () => {

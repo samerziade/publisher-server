@@ -1,6 +1,6 @@
 import { Connection } from 'mysql2/promise'
 
-import { Subscription } from '../SubscribeController'
+import { Subscription } from '../subscribeController'
 import { Message } from '../catchAllController'
 
 export const getMessagesForSubscription = (conn: Connection, subscription: Subscription): Message[] => {
