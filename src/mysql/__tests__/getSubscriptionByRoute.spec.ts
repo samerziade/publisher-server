@@ -11,7 +11,7 @@ describe('getSubscriptionByRoute()', () => {
     expect(result).toBeUndefined()
   })
 
-  it('should return an subscription object if the path is a match', () => {
+  it('should return a subscription object if the path is a match', () => {
     const subscription: Subscription = { subscriptions_id: 1, topic: 'Topic 1', url: 'the right path' }
     const conn = { query: jest.fn((): [[Subscription]] => [[subscription]]) }
     const result = getSubscriptionByRoute((conn as unknown) as Connection, 'the right path')
