@@ -73,11 +73,11 @@ To publish an event to `topic1`:
 curl -X POST \
      --data '{"messages": "message 1"}' \
      -H "Content-Type: application/json" \
-     http://localhost:8000/publish/topic3
+     http://localhost:8000/publish/topic1
 ```
 
 ### Viewing
 
 ```bash
-curl -X GET http://localhost:8000/event3
+curl -X GET http://localhost:8000/event1
 ```
