@@ -13,7 +13,7 @@ export const controller = async (req: Request, res: Response) => {
     }
 
     const conn = await connection()
-    const subscription = getSubscriptionByTopic(conn, topic)
+    const subscription = await getSubscriptionByTopic(conn, topic)
 
     if (subscription === undefined) {
       return res.status(404).send({ error: 'Topic not found' })
