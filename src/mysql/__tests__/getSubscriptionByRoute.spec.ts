@@ -1,4 +1,4 @@
-import { Connection } from 'mysql2'
+import { Connection } from 'mysql2/promise'
 
 import { getSubscriptionByRoute } from '..'
 import { Subscription } from '../../SubscribeController'
