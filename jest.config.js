@@ -4,6 +4,6 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   collectCoverage: false,
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!<rootDir>/src/main.ts', '!<rootDir>/**/*.d.ts'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!<rootDir>/src/**/index.ts', '!<rootDir>/**/*.d.ts'],
   moduleFileExtensions: [...defaults.moduleFileExtensions, 'd.ts'],
 }
