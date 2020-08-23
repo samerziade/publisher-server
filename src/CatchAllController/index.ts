@@ -1,4 +1,4 @@
-export { catchAllController } from './controller'
+export { controller as catchAllController } from './controller'
 
 export interface Message {
   messages_id: number

@@ -3,7 +3,7 @@ import { Request, Response } from 'express'
 import { connection, getSubscriptionByRoute, getMessagesForSubscription } from '../mysql'
 import { mapMessagesToResponse } from './mapMessagesToResponse'
 
-export const catchAllController = async (req: Request, res: Response) => {
+export const controller = async (req: Request, res: Response) => {
   try {
     const conn = await connection()
     const subscription = getSubscriptionByRoute(conn, req.params[0])
